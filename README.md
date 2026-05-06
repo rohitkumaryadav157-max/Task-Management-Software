@@ -3,7 +3,10 @@
 A full-stack web application where users can create projects, assign tasks, and track progress with role-based access (Admin & Member).
 
 ---
-
+-------------To Login----------
+Email:admin@gmail.com
+Password:1234
+--------------------------------
 ## 🚀 Features
 
 ### 🔐 Authentication
