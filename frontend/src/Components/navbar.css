@@ -1,0 +1,87 @@
+/* Navbar Container */
+.top-navbar {
+    background-color: rgb(185, 218, 236);
+    padding: 12px 25px;
+    border-radius: 15px; 
+    display: flex;
+    justify-content: space-between;
+   
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+ 
+    width: 100%;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    
+   
+}
+
+/* Left Section: Toggle Button */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.toggle-btn:hover {
+    color: #333;
+}
+
+/* Right Section: Icons & Profile */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between icons and profile */
+}
+
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 18px;
+}
+
+/* Red dot on notification if needed */
+.notification-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.user-profile-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #130808;
+   
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-navbar {
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .nav-right {
+        gap: 15px;
+    }
+}
