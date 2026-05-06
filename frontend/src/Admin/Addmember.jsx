@@ -25,7 +25,7 @@ function AddMember() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:4000/api/user",
+        "https://task-management-software-jmsc.onrender.com/api/user",
         {
           name,
           email,
@@ -63,7 +63,7 @@ function AddMember() {
   // ================= GET MEMBERS =================
   const getMembers = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/user");
+      const res = await axios.get("https://task-management-software-jmsc.onrender.com/api/user");
 
       if (res.data.msg === "success") {
         setMembers(res.data.users);

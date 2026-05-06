@@ -8,7 +8,7 @@ function MyTask() {
 console.log("User from localStorage:", user);
   const getMyTasks = async () => {
     const res = await axios.get(
-      `http://localhost:4000/api/task/user/${user._id}`
+      `https://task-management-software-jmsc.onrender.com/api/task/user/${user._id}`
     );
 
     if (res.data.msg === "success") {

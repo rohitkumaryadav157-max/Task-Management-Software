@@ -14,19 +14,19 @@ function AssignTask() {
 
   // GET PROJECTS
   const getProjects = async () => {
-    const res = await axios.get("http://localhost:4000/api/project");
+    const res = await axios.get("https://task-management-software-jmsc.onrender.com/api/project");
     if (res.data.msg === "success") setProjects(res.data.projects);
   };
 
   // GET MEMBERS
   const getMembers = async () => {
-    const res = await axios.get("http://localhost:4000/api/user");
+    const res = await axios.get("https://task-management-software-jmsc.onrender.com/api/user");
     if (res.data.msg === "success") setMembers(res.data.users);
   };
 
   // GET TASKS
   const getTasks = async () => {
-    const res = await axios.get("http://localhost:4000/api/task");
+    const res = await axios.get("https://task-management-software-jmsc.onrender.com/api/task");
     if (res.data.msg === "success") setTasks(res.data.tasks);
   };
 
@@ -34,7 +34,7 @@ function AssignTask() {
   const addTask = async (e) => {
     e.preventDefault();
 
-    const res = await axios.post("http://localhost:4000/api/task", {
+    const res = await axios.post("https://task-management-software-jmsc.onrender.com/api/task", {
       title,
       projectId,
       assignedTo,

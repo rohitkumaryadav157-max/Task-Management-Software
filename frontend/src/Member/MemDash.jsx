@@ -15,7 +15,7 @@ function MemDash() {
 
   const getUserTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/task");
+      const res = await axios.get("https://task-management-software-jmsc.onrender.com/api/task");
 
       if (res.data.msg === "success") {
         const tasks = res.data.tasks.filter(

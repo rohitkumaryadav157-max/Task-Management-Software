@@ -12,7 +12,7 @@ function MyTask() {
   // GET TASKS
   const getMyTasks = async () => {
     const res = await axios.get(
-      `http://localhost:4000/api/task/user/${user._id}`
+      `https://task-management-software-jmsc.onrender.com/api/task/user/${user._id}`
     );
 
     if (res.data.msg === "success") {
@@ -29,7 +29,7 @@ function MyTask() {
   // SAVE STATUS
   const updateStatus = async () => {
     await axios.put(
-      `http://localhost:4000/api/task/${editId}`,
+      `https://task-management-software-jmsc.onrender.com/api/task/${editId}`,
       { status: newStatus }
     );
 

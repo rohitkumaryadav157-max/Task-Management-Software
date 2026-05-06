@@ -15,7 +15,7 @@ function AddProject() {
 
   try {
     const res = await axios.post(
-      "http://localhost:4000/api/project",
+      "https://task-management-software-jmsc.onrender.com/api/project",
       { title, description, status }
     );
 
@@ -39,7 +39,7 @@ function AddProject() {
   const getProjects = async () => {
   try {
     const res = await axios.get(
-      "http://localhost:4000/api/project"
+      "https://task-management-software-jmsc.onrender.com/api/project"
     );
 
     if (res.data.msg === "success") {
